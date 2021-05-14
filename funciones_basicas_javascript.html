@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <script>
+            // pregunta1:
+            function a(){
+                return 35;
+            }
+            console.log(a())
+
+            //deberia imprimir 35
+
+            // pregunta 2:
+            function a(){
+                return 4;
+            }
+            console.log(a()+a());
+
+            // debería imprimir 8
+            
+            // pregunta 3:
+            function a(b){
+                return b;
+            }
+            console.log(a(2)+a(4));
+
+            // deberia imprimir 6
+
+            // pregunta 4:
+
+            function a(b){
+                console.log(b);
+                return b*3;
+            }
+            console.log(a(3));
+
+            // deberia imprimir 3 y 9
+
+            // Pregunta 5:
+
+            function a(b){
+                return b*4;
+                console.log(b);
+            }
+            console.log(a(10));
+
+            // Debería imprimir  40
+
+            // Pregunta 6
+
+            function a(b){
+                if(b<10) {
+                    return 2;
+                }
+                else     {
+                    return 4;
+                }
+                console.log(b);
+            }
+            console.log(a(15));
+
+
+            // Deberia imprimir 4
+
+
+            //Pregunta 7:
+
+            function a(b,c){
+                return b*c;
+            }
+            console.log(10,3);
+            console.log( a(3,10) );
+
+            //deberia imprimir 10, 3 y luego en otra linea 30 
+
+            // Pregunta 8:
+
+            function a(b){
+                for(var i=0; i<10; i++){
+                    console.log(i);
+                }
+                return i;
+            }
+            console.log(3);
+            console.log(4);
+
+            // Deberia imprimir del 0 al 9 y luego 3 
+            //deberia imprimir del 0 al 9 y luego 4
+
+            // Pregunta 9:
+
+            function a(){
+                for(var i=0; i<10; i++){
+                    i = i +2;
+                    console.log(i);
+                }
+            }
+            a();    
+
+            // deberia imprimir 2,5,8,11
+
+
+            //Pregunta 10:
+
+            function a(b,c){
+                for(var i=b; i<c; i++) {
+                console.log(i);
+                }
+                return b*c;
+                }
+            a(0,10);
+            console.log(a(0,10));
+
+            // Deberia imprimir del 0 al 9
+            // Deberia imprimir del 0 al 9 y luego 0
+
+
+            // Pregunta 11
+
+            function a(){
+                for(var i=0; i<10; i++){
+                    for(var j=0; j<10; j++){
+                        console.log(j);
+                    }
+                console.log(i);
+                }
+            }
+
+            // no se llamo a la funcion no deberia correr
+
+            // Deberia imprimir 0 al 9 y luego 0
+            // luego 0 al 9 y 1 y asi sucesivamente hasta alcanzar 9
+
+            // Pregunta 12
+
+            function a(){
+            for(var i=0; i<10; i++){
+                for(var j=0; j<10; j++){
+                    console.log(i,j);
+                }
+                console.log(j,i);
+            }
+        }
+
+        // no se llamo a la funcion no deberia imprmir nada
+
+
+        // Pregunta 13
+
+        var z = 10;
+        function a(){
+            var z = 15;
+            console.log(z);
+        }
+        console.log(z);
+
+        // Deberia imprimir 10 dado a que no llama la funcion
+
+        // Pregunta 14
+
+        var z = 10;
+        function a(){
+            var z = 15;
+            console.log(z);
+        }
+        a();
+        console.log(z);
+
+        //deberia imprimir 15 y luego 10??
+
+
+        // Pregunta 15
+
+        var z = 10;
+        function a(){
+            var z = 15;
+            console.log(z);
+            return z;
+        }
+        z = a();
+        console.log(z);
+
+        // deberia imprimir 15 y luego 15
+
+
+
+
+
+        </script>
+
+        
+
+          
+        
+            
+       
+
+    
+    </body>
+</html>
